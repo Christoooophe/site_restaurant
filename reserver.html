@@ -2,8 +2,8 @@
 <html>
     <head>
         <meta charset = "UTF-8">
-        <title>Le petit resto</title>
-        <link rel="stylesheet" href="css/style_contact.css">
+        <title>Réserver</title>
+        <link rel="stylesheet" href="css/style_login.css">
         <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Satisfy&family=The+Nautigal:wght@700&display=swap" rel="stylesheet">
         <script src="javascript/script.js"></script>
     </head>
@@ -11,18 +11,21 @@
     <body>
         <form id="form1">
             <div class="container">
-                <div class="element">
-                    <label>Mail</label>
+                <div class="elements">
+                    <label>Login</label>
                     <input type="text" class="text" id="username" name="text1" placeholder="E-mail" maxlength="60">
                 </div>
-                <div class="element">
-                    <label>Commentaire</label>
-                    <textarea class="text" id="password" placeholder="Laissez-nous votre commentaire" maxlength="500"></textarea>
+                <div class="elements">
+                    <label>Password</label>
+                    <input type="password" class="text" id="password" placeholder="**********" maxlength="25"> 
+                </div>
+                <div class="case">
+                    <input type="checkbox" onclick="myFunction()">Show password
                 </div>
                 <span id="span"></span>
                 </div> 
             <div class="button">
-                <button type="button" id="submit" onclick="ValidateEmail()">Submit &#10095;</button>
+                <button type="button" id="submit" onclick="verifCompte(); ValidateEmail() ">Submit &#10095;</button>
                 <button type="reset" id="reset" onclick="macouille()">Reset &#10095;</button>
             </div>
         </form>

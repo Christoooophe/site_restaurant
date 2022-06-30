@@ -69,6 +69,7 @@ h1{
     width: 60%;
     margin: auto; 
     padding-bottom: 150px;
+    margin-top: 50px;
 }
 .main_container_elements, .main_container_elements2{
     display: flex;
@@ -178,4 +179,16 @@ footer img {
 
 .end{
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.end ol{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.end li{
+    padding: 0 15px 0 15px;
 }
