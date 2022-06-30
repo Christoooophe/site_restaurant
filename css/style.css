@@ -17,7 +17,7 @@ header{
 }
 header img{
     width: 30%;
-    height: 250px;
+    height: 350px;
     padding-top: 100px;
 }
 nav{
@@ -38,6 +38,7 @@ nav li{
 nav a{
     text-decoration: none;
     color: white;
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.566);
 }
 nav a:hover{
     border-bottom: 3px solid white;
@@ -64,12 +65,14 @@ h1{
     font-size: 50pt;
     border-top: solid 3px white;
     border-bottom: solid 3px white;
+    text-shadow: 3px 3px rgba(255, 255, 255, 0.566);
 }
 .main_container{
     width: 60%;
     margin: auto; 
     padding-bottom: 150px;
     margin-top: 50px;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.566);
 }
 .main_container_elements, .main_container_elements2{
     display: flex;
@@ -109,6 +112,7 @@ h1{
     display: flex;
     flex-direction: row;
     background-color: rgba(0, 0, 0, 0.619);
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.566);
 }
 .main_bottom_content{
     width:70%;
@@ -144,6 +148,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.566);
 }
 
 footer img{
@@ -191,4 +196,12 @@ footer img {
 }
 .end li{
     padding: 0 15px 0 15px;
+}
+.end a{
+    text-decoration: none;
+    color: white;
+}
+.end a:hover{
+    border-top: solid 1px white;
+    padding-top: 3px;
 }
