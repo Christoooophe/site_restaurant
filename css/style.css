@@ -1,6 +1,7 @@
 body{
+    font-family: 'Courgette', cursive;
     margin : 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    color: azure;
 }
 header{
     background : url("../img/bg-slider-06.jpg");
@@ -11,7 +12,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 700px;
+    height: 710px;
 }
 header img{
     width: 30%;
@@ -31,15 +32,16 @@ nav ol{
 nav li{
     list-style-type:none;
     font-weight: bold;
-    font-size: x-large;
+    font-size: 20pt;
 }
 nav a{
-    color: white;
     text-decoration: none;
+    color: white;
 }
 nav a:hover{
     border-bottom: 3px solid white;
-    padding-bottom: 10px;
+    border-top: 3px solid white;
+    padding : 10px 0px;
     transition-delay: 0.1s;
 }
 
@@ -55,19 +57,29 @@ nav a:hover{
 }
 h1{
     text-transform: uppercase;
+    text-align: center;
+    margin:0;
+    padding:80px;
+    font-size: 50pt;
+    border-top: solid 3px white;
+    border-bottom: solid 3px white;
 }
 .main_container{
-    border: 1px solid black;
     width: 60%;
     margin: auto; 
-
+    padding-bottom: 150px;
 }
 .main_container_elements, .main_container_elements2{
     display: flex;
     align-items: center;
-    height: 200px;
+    height: 300px;
 }
-
+.main_container_elements{
+    background-color: rgba(0, 0, 0, 0.319);
+}
+.main_container_elements2{
+    background-color: rgba(69, 68, 68, 0.397);
+}
 .elements{
     height:180px;
     width: 80%;
@@ -75,7 +87,35 @@ h1{
 }
 .elements img{
     width: 70%;
-    height: 100%;
+    height: 120%;
+}
+.elements p{
+    align-items: center;
+    font-size: 18pt;
+}
+.elements h2{
+    text-transform: uppercase;
+    font-size: 30pt;
 }
 
 
+/*  Bottom  */
+
+
+.main_bottom{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.619);
+}
+.main_bottom_content{
+    width:70%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main_bottom_content img{
+    width: 70%;
+    height: 70%;
+}
