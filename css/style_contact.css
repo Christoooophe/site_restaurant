@@ -14,18 +14,19 @@ body{
     align-items: center;
 }
 form{
-    height: 400px;
+    height: 500px;
     background-color: rgba(0, 0, 0, 0.567);
     width: 50%;
     border-radius: 25px;
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.427);
     display: flex;
     flex-direction: column;
+    font-size: 15pt;
 }
 h1{
     text-transform: uppercase;
     font-size: 30pt;
-    margin-top: 80px;
+    margin-top: 50px;
     text-shadow: 5px 5px rgba(0, 0, 0, 0.566);
 }
 .container{
@@ -43,7 +44,7 @@ label{
 .button{
     display: flex;
     justify-content: space-around;
-    margin-top: 25px;
+    margin-top: 0;
     margin-bottom: 15px;
 }
 button{
@@ -64,7 +65,7 @@ button{
     width: 70%;
     align-items: center;
 }
-.elements input{
+.elements input, textarea{
     background: transparent;
     color: azure;
     border: 2px solid white;
@@ -74,6 +75,11 @@ button{
     font-weight: bold;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.427);
 }
+.elements textarea{
+    overflow: auto;
+    resize: none;
+    height: 200px;
+}
 .elements input::focus{
     outline:none;
 }
@@ -81,10 +87,6 @@ button{
     color:white;
     font-weight: bold;
 }
-form{
-    font-size: 30pt;
-}
-
 .case{
    color: white;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
