@@ -9,13 +9,14 @@ header{
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     height: 700px;
 }
 header img{
-    width: 20%;
+    width: 30%;
     height: 250px;
+    padding-top: 100px;
 }
 nav{
     text-transform: uppercase;
