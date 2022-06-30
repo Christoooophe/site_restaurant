@@ -17,7 +17,7 @@ header{
 }
 header img{
     width: 30%;
-    height: 350px;
+    height: 450px;
     padding-top: 100px;
 }
 nav{
@@ -52,7 +52,7 @@ nav a:hover{
 
 
 .main{
-    background: url("../img/pexels-valeria-boltneva-1833349.jpg");
+    background: url("../img/plats/pexels-valeria-boltneva-1833349.jpg");
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -300,3 +300,31 @@ footer img {
 .slideshow-container h2{
     text-align: center;
 }
+
+
+/* carousel 2 */
+.carousel{
+    width: 70%;
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/plats/pexels-daria-shevtsova-2053884.jpg");
+  }
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.7s;
+    animation-name: fade;
+    animation-duration: 0.7s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+  }
+  
