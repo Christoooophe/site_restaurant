@@ -1,5 +1,5 @@
 body{
-    font-family: 'Courgette', cursive;
+    font-family: 'Playball', cursive;
     margin : 0;
     color: azure;
     background : url("../img/bg-slider-06.jpg");
@@ -76,7 +76,7 @@ h1{
 }
 .main_container_elements, .main_container_elements2{
     display: flex;
-    align-items: center;
+    justify-content: center;
     height: 350px;
 }
 .main_container_elements{
@@ -87,12 +87,18 @@ h1{
 }
 .elements{
     height:180px;
-    width: 80%;
+    width: 70%;
     text-align: center;
+}
+.elements h2, .elements p{
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
 }
 .elements img{
     width: 70%;
     height: 120%;
+    margin-top: 50px;
 }
 .elements p{
     align-items: center;
@@ -121,6 +127,9 @@ h1{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.main_bottom_content h2{
+  font-size: xx-large;
 }
 .main_bottom_content img{
     width: 70%;
@@ -218,6 +227,9 @@ footer img {
   position: relative;
   margin: auto;
 }
+.slideshow-container h2{
+  font-size: xx-large;
+}
 
 /* Hide the images by default */
 .mySlides {
@@ -303,28 +315,35 @@ footer img {
 
 
 /* carousel 2 */
-.carousel{
-    width: 70%;
-    height: 70%;
-    background-size: cover;
-    background-position: center;
-    background-image: url("../img/plats/pexels-daria-shevtsova-2053884.jpg");
-  }
-  
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 0.7s;
-    animation-name: fade;
-    animation-duration: 0.7s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: 0.4}
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: 0.4}
-    to {opacity: 1}
-  }
-  
+#slider {
+  position: relative;
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+#precedent,
+#suivant {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  position: absolute;
+  font-size: 100px;
+  color: rgba(220, 220, 220, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
+
+#precedent {
+  left: 0;
+}
+
+#suivant {
+  right: 0;
+}
+
+#slider:hover #precedent,
+#slider:hover #suivant {
+  opacity: 1;
+}

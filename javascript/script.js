@@ -81,18 +81,19 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-const images = ["https://images.pexels.com/photos/8294606/pexels-photo-8294606.jpeg?cs=srgb&dl=pexels-pavel-danilyuk-8294606.jpg&fm=jpg", "https://images.pexels.com/photos/8294620/pexels-photo-8294620.jpeg?cs=srgb&dl=pexels-pavel-danilyuk-8294620.jpg&fm=jpg", "https://images.pexels.com/photos/8294660/pexels-photo-8294660.jpeg?cs=srgb&dl=pexels-pavel-danilyuk-8294660.jpg&fm=jpg"];
-const carousel = document.querySelector(".carousel");
-const interval = setInterval(function() {
-   startCarousel();
- }, 3000);
-var index = 1;
 
-startCarousel = () => {
-  carousel.style.backgroundImage = `url(${images[index++]})`;
-  carousel.classList.remove("fade");
-  void carousel.offsetWidth;
-  carousel.classList.add("fade");
-  if(index > images.length - 1) index = 0;
+var slide = new Array("../img/plats/pexels-daria-shevtsova-2053884.jpg", "../img/plats/pexels-rachel-claire-6126302.jpg", "../img/plats/pexels-michelle-riach-995743.jpg", "../img/plats/pexels-valeria-boltneva-1833349.jpg");
+var numero = 0;
+
+function ChangeSlide(sens) {
+    numero = numero + sens;
+    if (numero < 0)
+        numero = slide.length - 1;
+    if (numero > slide.length - 1)
+        numero = 0;
+    document.getElementById("slide").src = slide[numero];
 }
+
+
+
     

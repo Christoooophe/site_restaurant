@@ -4,7 +4,7 @@
         <meta charset = "UTF-8">
         <title></title>
         <link rel="stylesheet" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Satisfy&family=The+Nautigal:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Playball&family=Satisfy&family=The+Nautigal:wght@700&display=swap" rel="stylesheet">
         <script src="javascript/script.js"></script>
     </head>
 
@@ -12,7 +12,7 @@
         <header>
             <nav>
                 <ol>
-                    <li><a href="index.html" target="_blank">Accueil</a></li>
+                    <li><a href="index.html">Accueil</a></li>
                     <li><a href="Notre_histoire.html" target="_blank">Notre histoire</a></li>
                     <li><a href="contact.html" target="_blank">Nous contacter</a></li>
                     <li><a href="reserver.html" target="_blank">Réserver</a></li>
@@ -20,9 +20,6 @@
             </nav>
             <img src="img/Chez_Babar__1_-removebg-preview.png">
         </header>
-        <!--<div>
-            <img src="img/top.jpg">
-        </div>-->
         <div class="main">
             <h1>le menu du jour</h1>
             <div class="main_container">
@@ -78,10 +75,12 @@
                 <h2>Nous situer</h2>
                 <img src="img/Capture.PNG">
             </div>
-            <div class="main_bottom_content" id="slider">
-                <h2>Les photos de nos clients</h2>
-                <div class="carousel fade"></div>
-            </div>
+            <h2>Le beau slider</h2>
+            <div id="slider">
+                <img src="img/plats/pexels-jonathan-borba-2983099.jpg" alt="La forêt de peupliers" id="slide">
+            <div id="precedent" onclick="ChangeSlide(-1)"></div>
+            <div id="suivant" onclick="ChangeSlide(1)"></div>
+        </div>
         </div>
 
         <!-- Images qui defilent bottom-->

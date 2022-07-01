@@ -1,5 +1,5 @@
 body{
-    font-family: 'Courgette', cursive;
+    font-family: 'Playball', cursive;
     margin : 0;
     color: azure;
     background : url("../img/bg-menu-01.png");
@@ -39,4 +39,24 @@ nav a:hover{
     border-top: 3px solid white;
     padding : 10px 0px;
     transition-delay: 0.1s;
+}
+
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+article{
+    width: 60%;
+}
+aside{
+    width: 30%;
+}
+aside img{
+     width: 100%;
+}
+h1{
+    text-align: center;
+    font-size: 40pt;
 }
