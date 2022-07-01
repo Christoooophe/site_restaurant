@@ -79,13 +79,13 @@ function Slides(n) {
   }
   Slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  setInterval("CurrentSlide(1)", 1000);
+  setInterval("CurrentSlide(1)", 7000);
 }
 
 
 
 
-/* Carousel  */
+/* Carousel 2 */
 
 
 
