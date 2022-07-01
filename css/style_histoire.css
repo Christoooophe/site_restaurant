@@ -47,10 +47,16 @@ section{
     flex-direction: row;
     justify-content: space-around;
 }
+section, h1{
+    background-color: rgba(0, 0, 0, 0.799);
+}
 article{
     width: 60%;
 }
-aside{
+article p{
+    font-size: 20pt;
+}
+.aside{
     width: 30%;
 }
 aside img{
@@ -59,4 +65,5 @@ aside img{
 h1{
     text-align: center;
     font-size: 40pt;
+    margin: 50px 0 0 0;
 }

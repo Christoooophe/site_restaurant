@@ -53,46 +53,39 @@ function myFunction() {
 
 /* Carousel  */
 let slideIndex = 1;
-showSlides(slideIndex);
+  Slides(slideIndex);
 
 // Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function PlusSlides(n) {
+  Slides(slideIndex += n);
 }
 
 // Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function CurrentSlide(n) {
+  Slides(slideIndex = n);
 }
 
-function showSlides(n) {
+function Slides(n) {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
+  let Slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  if (n > Slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = Slides.length}
+  for (i = 0; i < Slides.length; i++) {
+    Slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
+  Slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+  setInterval("CurrentSlide(1)", 1000);
 }
 
 
-var slide = new Array("../img/plats/pexels-daria-shevtsova-2053884.jpg", "../img/plats/pexels-rachel-claire-6126302.jpg", "../img/plats/pexels-michelle-riach-995743.jpg", "../img/plats/pexels-valeria-boltneva-1833349.jpg");
-var numero = 0;
 
-function ChangeSlide(sens) {
-    numero = numero + sens;
-    if (numero < 0)
-        numero = slide.length - 1;
-    if (numero > slide.length - 1)
-        numero = 0;
-    document.getElementById("slide").src = slide[numero];
-}
+
+/* Carousel  */
 
 
 
