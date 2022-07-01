@@ -103,6 +103,7 @@ h1{
 .elements p{
     align-items: center;
     font-size: 18pt;
+    margin-top: 10px;
 }
 .elements h2{
     text-transform: uppercase;
@@ -131,9 +132,17 @@ h1{
 .main_bottom_content h2{
   font-size: xx-large;
 }
-.main_bottom_content img{
+.main_bottom_content #photo_droite{
     width: 70%;
     height: 70%;
+}
+.main_bottom_content a{
+    width: 70%;
+    height: 70%;
+}
+.main_bottom_content #photo_gauche{
+  width: 100%;
+  height: 100%;
 }
 
 

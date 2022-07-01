@@ -115,7 +115,7 @@ nav li{
 nav a{
     text-decoration: none;
     color: white;
-    padding: 50px;
+    padding: 49px;
 }
 nav a:hover{
     border-bottom: 3px solid white;
@@ -129,4 +129,5 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 50px;
 }
